@@ -4,27 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Drum Project.</title>
 </head>
-<body>
+<body class="bg-slate-50">
   <main>
     <header>
       <nav>
-        <li>The Drum Project.</li>
-        <li>Jorge Ortiz</li>
+        <ul class="flex py-3 px-5 justify-between items-center bg-slate-900">
+          <li class="font-semibold text-lg text-white">The Drum Project.</li>
+          <li class="font-semibold text-white text-sm">Jorge Ortiz</li>
+        </ul>
       </nav>
     </header>
 
-    <section>
-      <h1>The Drum Project</h1>
-      <p>
-        This is th Drum Project. <br>
-        You have to type the next keys on your keyboard to make the magic happens.
+    <section class="m-24 flex flex-col justify-center items-center">
+      <h1 class="mb-10 font-bold text-7xl">The Drum Project</h1>
+      <p class="text-center">
+        <span class="font-semibold">
+          This is th Drum Project. <br>
+          You have to type the next keys on your keyboard to make the magic happens.
+        </span>
       </p>
     </section>
 
+    <section class="my-10 flex flex-col justify-center items-center">
+      <h3 class="text-2xl  font-semibold">Come'on. Start playing!</h3>
+      <div class="p-24 flex gap-10">
+        <div class="flex flex-col justify-center items-center">
+          <span class="font-bold text-2xl mb-3">A</span>
+          <button id="a">
+            <img src="images/crash.png" alt="crash" class="object-contain h-28 w-40 border">
+          </button>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <span class="font-bold text-2xl mb-3">S</span>
+          <button id="s">
+            <img src="images/kick.png" alt="crash" class="object-contain h-28 w-40 border">
+          </button>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <span class="font-bold text-2xl mb-3">G</span>
+          <button id="g">
+            <img src="images/snare.png" alt="crash" class="object-contain h-28 w-40 border">
+          </button>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <span class="font-bold text-2xl mb-3">H</span>
+          <button id="h">
+            <img src="images/tom1.png" alt="crash" class="object-contain h-28 w-40 border">
+          </button>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <span class="font-bold text-2xl mb-3">J</span>
+          <button id="j">
+            <img src="images/tom2.png" alt="crash" class="object-contain h-28 w-40 border">
+          </button>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <span class="font-bold text-2xl mb-3">K</span>
+          <button id="k">
+            <img src="images/tom3.png" alt="crash" class="object-contain h-28 w-40 border">
+          </button>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <span class="font-bold text-2xl mb-3">L</span>
+          <button id="l">
+            <img src="images/tom4.png" alt="crash" class="object-contain h-28 w-40 border">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+
     <footer>
-      2022 @ | Jorge Ortiz.
+      <div class="py-3 bg-slate-900 text-center font-semibold text-white">
+        2022 @ | Jorge Ortiz.
+      </div>
     </footer>
   </main>
 </body>
